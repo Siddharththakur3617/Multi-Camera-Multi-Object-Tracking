@@ -1,5 +1,5 @@
 {
-    "yolo_model_path": "/path/to/custom_yolov11.pt",
+    "yolo_model_path": "assets/custom_yolov11.pt",
     "reid_model": "osnet_x0_25",
     "class_names": ["ball", "goalkeeper", "player", "referee"],
     "color_map": {
@@ -8,7 +8,7 @@
         "2": [0, 0, 255],
         "3": [255, 255, 0]
     },
-    "camera_streams": ["/path/to/broadcast.mp4", "/path/to/tacticam.mp4"],
+    "camera_streams": ["assets/static/broadcast.mp4", "assets/static/tacticam.mp4"],
     "output_dir": "output_videos",
     "fps": 30,
     "target_size": [960, 540],
