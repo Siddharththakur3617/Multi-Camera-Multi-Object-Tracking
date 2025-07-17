@@ -4,7 +4,7 @@ import os
 class Config:
     def __init__(self, config_path="config/config.json"):
         # Default values
-        self.yolo_model_path = "/path/to/custom_yolov11.pt"
+        self.yolo_model_path = "assets/custom_yolov11.pt"
         self.reid_model = "osnet_x0_25"
         self.class_names = ['ball', 'goalkeeper', 'player', 'referee']
         self.color_map = {
@@ -13,7 +13,7 @@ class Config:
             2: (0, 0, 255),    # Blue for player
             3: (255, 255, 0)   # Yellow for referee
         }
-        self.camera_streams = ["/path/to/broadcast.mp4", "/path/to/tacticam.mp4"]
+        self.camera_streams = ["assets/static/broadcast.mp4", "assets/static/tacticam.mp4"]
         self.output_dir = "output_videos"
         self.fps = 30
         self.target_size = (960, 540)
