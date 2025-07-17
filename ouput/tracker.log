@@ -1,0 +1,385 @@
+2025-07-17 06:56:28,073 [INFO] CUDA available: True
+2025-07-17 06:56:28,104 [INFO] GPU detected: Tesla T4, CUDA version: 12.4
+2025-07-17 06:56:28,105 [INFO] Initial GPU memory allocated: 0.00 MB
+2025-07-17 06:56:28,106 [INFO] Using device: cuda
+2025-07-17 06:56:33,619 [INFO] Models initialized successfully
+2025-07-17 06:56:33,620 [INFO] YOLO class names: {0: 'ball', 1: 'goalkeeper', 2: 'player', 3: 'referee'}
+2025-07-17 06:56:33,721 [DEBUG] Initialized tracker for cam_id 0, cls_id 0 (ball)
+2025-07-17 06:56:33,723 [DEBUG] Initialized tracker for cam_id 0, cls_id 1 (goalkeeper)
+2025-07-17 06:56:33,724 [DEBUG] Initialized tracker for cam_id 0, cls_id 2 (player)
+2025-07-17 06:56:33,725 [DEBUG] Initialized tracker for cam_id 0, cls_id 3 (referee)
+2025-07-17 06:56:33,726 [DEBUG] Initialized tracker for cam_id 1, cls_id 0 (ball)
+2025-07-17 06:56:33,726 [DEBUG] Initialized tracker for cam_id 1, cls_id 1 (goalkeeper)
+2025-07-17 06:56:33,727 [DEBUG] Initialized tracker for cam_id 1, cls_id 2 (player)
+2025-07-17 06:56:33,728 [DEBUG] Initialized tracker for cam_id 1, cls_id 3 (referee)
+2025-07-17 06:56:33,729 [INFO] Initialized trackers for 2 cameras, 4 classes
+2025-07-17 06:56:33,730 [INFO] Starting run method
+2025-07-17 06:56:33,770 [INFO] Initialized track file /kaggle/working/output_videos/tracks_camera_0.txt and video writer for camera 0
+2025-07-17 06:56:33,771 [INFO] Initialized track file /kaggle/working/output_videos/tracks_camera_1.txt and video writer for camera 1
+2025-07-17 06:56:33,772 [DEBUG] Attempting to open video stream: /kaggle/input/dataset-mcmot/broadcast.mp4
+2025-07-17 06:56:33,823 [INFO] Camera 0 stream /kaggle/input/dataset-mcmot/broadcast.mp4: 132 frames
+2025-07-17 06:56:33,824 [DEBUG] Attempting to open video stream: /kaggle/input/dataset-mcmot/tacticam.mp4
+2025-07-17 06:56:33,848 [INFO] Camera 1 stream /kaggle/input/dataset-mcmot/tacticam.mp4: 201 frames
+2025-07-17 06:56:33,848 [INFO] Limiting processing to 20 frames due to max_frames setting
+2025-07-17 06:56:34,222 [INFO] Preloaded 20 synchronized frames across 2 cameras
+2025-07-17 06:56:34,223 [INFO] Processing 20 frames with batch size 16
+2025-07-17 06:56:34,225 [DEBUG] Processing batch for cam_id 0, frames 0 to 15
+2025-07-17 06:56:34,225 [DEBUG] Processing batch for cam_id 1, frames 0 to 15
+2025-07-17 06:56:34,458 [ERROR] Error in YOLO prediction for frame 0, cam_id 0: 'Conv' object has no attribute 'bn'
+2025-07-17 06:56:34,474 [INFO] Frame 0 for cam_id 0 written to video with 0 bounding boxes
+2025-07-17 06:56:34,475 [INFO] Completed frame 0 for cam_id 0
+2025-07-17 06:56:34,477 [DEBUG] GPU memory after frame 0 for cam_id 0: 715.67 MB
+2025-07-17 06:56:36,661 [DEBUG] Frame 0, cam_id 1: 22 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           3]
+2025-07-17 06:56:36,662 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:36,854 [DEBUG] Extracted 22 features
+2025-07-17 06:56:36,902 [DEBUG] Extracted 22 features
+2025-07-17 06:56:36,950 [DEBUG] Unique class IDs: [          2           3]
+2025-07-17 06:56:37,027 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:56:37,168 [DEBUG] Frame 1, cam_id 0: 1 detections, class IDs: [          2]
+2025-07-17 06:56:37,169 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:37,197 [DEBUG] Tracker for class 2 returned 15 tracks, tids shape: torch.Size([15])
+2025-07-17 06:56:37,199 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:37,205 [DEBUG] Tracker for class 3 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:37,206 [DEBUG] Assigning global IDs for cam_id 1, 16 tracks
+2025-07-17 06:56:37,217 [DEBUG] Frame 0, cam_id 1: 16 global ID assignments
+2025-07-17 06:56:37,228 [DEBUG] Extracted 1 features
+2025-07-17 06:56:37,229 [DEBUG] Extracted 1 features
+2025-07-17 06:56:37,231 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:56:37,232 [DEBUG] Class 2 (player): 1 detections, 1 features
+2025-07-17 06:56:37,234 [INFO] Frame 0 for cam_id 1 written to video with 16 bounding boxes
+2025-07-17 06:56:37,235 [INFO] Completed frame 0 for cam_id 1
+2025-07-17 06:56:37,236 [DEBUG] GPU memory after frame 0 for cam_id 1: 1510.20 MB
+2025-07-17 06:56:37,257 [DEBUG] Tracker for class 2 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:37,259 [DEBUG] Assigning global IDs for cam_id 0, 1 tracks
+2025-07-17 06:56:37,295 [DEBUG] Frame 1, cam_id 0: 1 global ID assignments
+2025-07-17 06:56:37,299 [DEBUG] Frame 1, cam_id 1: 21 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2]
+2025-07-17 06:56:37,299 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:37,304 [INFO] Frame 1 for cam_id 0 written to video with 1 bounding boxes
+2025-07-17 06:56:37,305 [INFO] Completed frame 1 for cam_id 0
+2025-07-17 06:56:37,306 [DEBUG] GPU memory after frame 1 for cam_id 0: 1510.21 MB
+2025-07-17 06:56:37,375 [DEBUG] Frame 2, cam_id 0: 2 detections, class IDs: [          2           2]
+2025-07-17 06:56:37,376 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:37,387 [DEBUG] Extracted 21 features
+2025-07-17 06:56:37,389 [DEBUG] Extracted 21 features
+2025-07-17 06:56:37,391 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:56:37,393 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:56:37,455 [DEBUG] Extracted 2 features
+2025-07-17 06:56:37,457 [DEBUG] Extracted 2 features
+2025-07-17 06:56:37,458 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:56:37,460 [DEBUG] Class 2 (player): 2 detections, 2 features
+2025-07-17 06:56:37,484 [DEBUG] Tracker for class 2 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:56:37,485 [DEBUG] Assigning global IDs for cam_id 0, 2 tracks
+2025-07-17 06:56:37,488 [DEBUG] Frame 2, cam_id 0: 2 global ID assignments
+2025-07-17 06:56:37,495 [INFO] Frame 2 for cam_id 0 written to video with 2 bounding boxes
+2025-07-17 06:56:37,497 [INFO] Completed frame 2 for cam_id 0
+2025-07-17 06:56:37,498 [DEBUG] GPU memory after frame 2 for cam_id 0: 1510.37 MB
+2025-07-17 06:56:37,548 [DEBUG] Frame 3, cam_id 0: 0 detections, class IDs: none
+2025-07-17 06:56:37,548 [DEBUG] No detections for frame 3, cam_id 0
+2025-07-17 06:56:37,556 [INFO] Frame 3 for cam_id 0 written to video with 0 bounding boxes
+2025-07-17 06:56:37,557 [INFO] Completed frame 3 for cam_id 0
+2025-07-17 06:56:37,558 [DEBUG] GPU memory after frame 3 for cam_id 0: 1510.37 MB
+2025-07-17 06:56:37,603 [DEBUG] Frame 4, cam_id 0: 2 detections, class IDs: [          2           2]
+2025-07-17 06:56:37,604 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:37,652 [DEBUG] Extracted 2 features
+2025-07-17 06:56:37,654 [DEBUG] Extracted 2 features
+2025-07-17 06:56:37,656 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:56:37,658 [DEBUG] Class 2 (player): 2 detections, 2 features
+2025-07-17 06:56:37,681 [DEBUG] Tracker for class 2 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:56:37,683 [DEBUG] Assigning global IDs for cam_id 0, 2 tracks
+2025-07-17 06:56:37,686 [DEBUG] Frame 4, cam_id 0: 2 global ID assignments
+2025-07-17 06:56:37,693 [INFO] Frame 4 for cam_id 0 written to video with 2 bounding boxes
+2025-07-17 06:56:37,694 [INFO] Completed frame 4 for cam_id 0
+2025-07-17 06:56:37,695 [DEBUG] GPU memory after frame 4 for cam_id 0: 1510.37 MB
+2025-07-17 06:56:37,745 [DEBUG] Frame 5, cam_id 0: 12 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           3]
+2025-07-17 06:56:37,747 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:37,808 [DEBUG] Extracted 12 features
+2025-07-17 06:56:37,809 [DEBUG] Extracted 12 features
+2025-07-17 06:56:37,811 [DEBUG] Unique class IDs: [          2           3]
+2025-07-17 06:56:37,813 [DEBUG] Class 2 (player): 11 detections, 11 features
+2025-07-17 06:56:37,897 [DEBUG] Tracker for class 2 returned 11 tracks, tids shape: torch.Size([11])
+2025-07-17 06:56:37,899 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:37,904 [DEBUG] Tracker for class 3 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:37,906 [DEBUG] Assigning global IDs for cam_id 0, 12 tracks
+2025-07-17 06:56:37,919 [DEBUG] Frame 5, cam_id 0: 12 global ID assignments
+2025-07-17 06:56:37,936 [INFO] Frame 5 for cam_id 0 written to video with 12 bounding boxes
+2025-07-17 06:56:37,937 [INFO] Completed frame 5 for cam_id 0
+2025-07-17 06:56:37,938 [DEBUG] GPU memory after frame 5 for cam_id 0: 1510.48 MB
+2025-07-17 06:56:37,986 [DEBUG] Frame 6, cam_id 0: 12 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           3]
+2025-07-17 06:56:37,987 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:38,039 [DEBUG] Extracted 12 features
+2025-07-17 06:56:38,040 [DEBUG] Extracted 12 features
+2025-07-17 06:56:38,042 [DEBUG] Unique class IDs: [          2           3]
+2025-07-17 06:56:38,043 [DEBUG] Class 2 (player): 11 detections, 11 features
+2025-07-17 06:56:38,165 [DEBUG] Tracker for class 2 returned 15 tracks, tids shape: torch.Size([15])
+2025-07-17 06:56:38,167 [DEBUG] Assigning global IDs for cam_id 1, 15 tracks
+2025-07-17 06:56:38,183 [DEBUG] Frame 1, cam_id 1: 15 global ID assignments
+2025-07-17 06:56:38,196 [INFO] Frame 1 for cam_id 1 written to video with 15 bounding boxes
+2025-07-17 06:56:38,197 [INFO] Completed frame 1 for cam_id 1
+2025-07-17 06:56:38,198 [DEBUG] GPU memory after frame 1 for cam_id 1: 1510.56 MB
+2025-07-17 06:56:38,253 [DEBUG] Frame 2, cam_id 1: 22 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           3]
+2025-07-17 06:56:38,255 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:38,309 [DEBUG] Extracted 22 features
+2025-07-17 06:56:38,310 [DEBUG] Extracted 22 features
+2025-07-17 06:56:38,312 [DEBUG] Unique class IDs: [          2           3]
+2025-07-17 06:56:38,313 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:56:38,317 [DEBUG] Tracker for class 2 returned 15 tracks, tids shape: torch.Size([15])
+2025-07-17 06:56:38,319 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:38,328 [DEBUG] Tracker for class 3 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:56:38,330 [DEBUG] Assigning global IDs for cam_id 0, 17 tracks
+2025-07-17 06:56:38,342 [DEBUG] Frame 6, cam_id 0: 17 global ID assignments
+2025-07-17 06:56:38,354 [INFO] Frame 6 for cam_id 0 written to video with 17 bounding boxes
+2025-07-17 06:56:38,355 [INFO] Completed frame 6 for cam_id 0
+2025-07-17 06:56:38,356 [DEBUG] GPU memory after frame 6 for cam_id 0: 1510.56 MB
+2025-07-17 06:56:38,406 [DEBUG] Frame 7, cam_id 0: 14 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           3           1           0]
+2025-07-17 06:56:38,407 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:38,482 [DEBUG] Extracted 14 features
+2025-07-17 06:56:38,484 [DEBUG] Extracted 14 features
+2025-07-17 06:56:38,486 [DEBUG] Unique class IDs: [          0           1           2           3]
+2025-07-17 06:56:38,489 [DEBUG] Class 0 (ball): 1 detections, 1 features
+2025-07-17 06:56:38,494 [DEBUG] Tracker for class 0 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:38,497 [DEBUG] Class 1 (goalkeeper): 1 detections, 1 features
+2025-07-17 06:56:38,503 [DEBUG] Tracker for class 1 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:38,505 [DEBUG] Class 2 (player): 11 detections, 11 features
+2025-07-17 06:56:38,825 [DEBUG] Tracker for class 2 returned 9 tracks, tids shape: torch.Size([9])
+2025-07-17 06:56:38,828 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:38,843 [DEBUG] Tracker for class 3 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:38,845 [DEBUG] Assigning global IDs for cam_id 0, 12 tracks
+2025-07-17 06:56:38,853 [DEBUG] Frame 7, cam_id 0: 12 global ID assignments
+2025-07-17 06:56:38,867 [INFO] Frame 7 for cam_id 0 written to video with 12 bounding boxes
+2025-07-17 06:56:38,868 [INFO] Completed frame 7 for cam_id 0
+2025-07-17 06:56:38,869 [DEBUG] GPU memory after frame 7 for cam_id 0: 1510.61 MB
+2025-07-17 06:56:38,918 [DEBUG] Frame 8, cam_id 0: 15 detections, class IDs: [          2           2           2           2           2           2           2           2           2           3           2           2           0           2           1]
+2025-07-17 06:56:38,919 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:38,983 [DEBUG] Extracted 15 features
+2025-07-17 06:56:38,984 [DEBUG] Extracted 15 features
+2025-07-17 06:56:38,985 [DEBUG] Unique class IDs: [          0           1           2           3]
+2025-07-17 06:56:38,987 [DEBUG] Class 0 (ball): 1 detections, 1 features
+2025-07-17 06:56:39,002 [DEBUG] Tracker for class 0 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:56:39,003 [DEBUG] Class 1 (goalkeeper): 1 detections, 1 features
+2025-07-17 06:56:39,013 [DEBUG] Tracker for class 1 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:56:39,014 [DEBUG] Class 2 (player): 12 detections, 12 features
+2025-07-17 06:56:39,271 [DEBUG] Tracker for class 2 returned 15 tracks, tids shape: torch.Size([15])
+2025-07-17 06:56:39,273 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:39,287 [DEBUG] Tracker for class 3 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:56:39,289 [DEBUG] Assigning global IDs for cam_id 1, 17 tracks
+2025-07-17 06:56:39,299 [DEBUG] Frame 2, cam_id 1: 17 global ID assignments
+2025-07-17 06:56:39,316 [INFO] Frame 2 for cam_id 1 written to video with 17 bounding boxes
+2025-07-17 06:56:39,317 [INFO] Completed frame 2 for cam_id 1
+2025-07-17 06:56:39,318 [DEBUG] GPU memory after frame 2 for cam_id 1: 1510.63 MB
+2025-07-17 06:56:39,369 [DEBUG] Frame 3, cam_id 1: 21 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2]
+2025-07-17 06:56:39,370 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:39,412 [DEBUG] Extracted 21 features
+2025-07-17 06:56:39,414 [DEBUG] Extracted 21 features
+2025-07-17 06:56:39,415 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:56:39,417 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:56:39,476 [DEBUG] Tracker for class 2 returned 6 tracks, tids shape: torch.Size([6])
+2025-07-17 06:56:39,478 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:39,495 [DEBUG] Tracker for class 3 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:39,497 [DEBUG] Assigning global IDs for cam_id 0, 11 tracks
+2025-07-17 06:56:39,505 [DEBUG] Frame 8, cam_id 0: 11 global ID assignments
+2025-07-17 06:56:39,518 [INFO] Frame 8 for cam_id 0 written to video with 11 bounding boxes
+2025-07-17 06:56:39,519 [INFO] Completed frame 8 for cam_id 0
+2025-07-17 06:56:39,520 [DEBUG] GPU memory after frame 8 for cam_id 0: 1510.72 MB
+2025-07-17 06:56:39,568 [DEBUG] Frame 9, cam_id 0: 14 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           3           1           2]
+2025-07-17 06:56:39,569 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:39,614 [DEBUG] Extracted 14 features
+2025-07-17 06:56:39,615 [DEBUG] Extracted 14 features
+2025-07-17 06:56:39,617 [DEBUG] Unique class IDs: [          1           2           3]
+2025-07-17 06:56:39,619 [DEBUG] Class 1 (goalkeeper): 1 detections, 1 features
+2025-07-17 06:56:39,629 [DEBUG] Tracker for class 1 returned 0 tracks, tids shape: torch.Size([0])
+2025-07-17 06:56:39,631 [DEBUG] Class 2 (player): 12 detections, 12 features
+2025-07-17 06:56:40,297 [DEBUG] Tracker for class 2 returned 9 tracks, tids shape: torch.Size([9])
+2025-07-17 06:56:40,299 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:40,336 [DEBUG] Tracker for class 3 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:40,337 [DEBUG] Assigning global IDs for cam_id 0, 10 tracks
+2025-07-17 06:56:40,344 [DEBUG] Frame 9, cam_id 0: 10 global ID assignments
+2025-07-17 06:56:40,354 [INFO] Frame 9 for cam_id 0 written to video with 10 bounding boxes
+2025-07-17 06:56:40,354 [INFO] Completed frame 9 for cam_id 0
+2025-07-17 06:56:40,355 [DEBUG] GPU memory after frame 9 for cam_id 0: 1510.72 MB
+2025-07-17 06:56:40,419 [DEBUG] Frame 10, cam_id 0: 14 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           3           1           0]
+2025-07-17 06:56:40,420 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:40,461 [DEBUG] Extracted 14 features
+2025-07-17 06:56:40,463 [DEBUG] Extracted 14 features
+2025-07-17 06:56:40,465 [DEBUG] Unique class IDs: [          0           1           2           3]
+2025-07-17 06:56:40,467 [DEBUG] Class 0 (ball): 1 detections, 1 features
+2025-07-17 06:56:40,489 [DEBUG] Tracker for class 0 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:40,491 [DEBUG] Class 1 (goalkeeper): 1 detections, 1 features
+2025-07-17 06:56:40,497 [DEBUG] Tracker for class 1 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:40,499 [DEBUG] Class 2 (player): 11 detections, 11 features
+2025-07-17 06:56:41,084 [DEBUG] Tracker for class 2 returned 15 tracks, tids shape: torch.Size([15])
+2025-07-17 06:56:41,086 [DEBUG] Assigning global IDs for cam_id 1, 15 tracks
+2025-07-17 06:56:41,102 [DEBUG] Frame 3, cam_id 1: 15 global ID assignments
+2025-07-17 06:56:41,114 [INFO] Frame 3 for cam_id 1 written to video with 15 bounding boxes
+2025-07-17 06:56:41,115 [INFO] Completed frame 3 for cam_id 1
+2025-07-17 06:56:41,116 [DEBUG] GPU memory after frame 3 for cam_id 1: 1510.83 MB
+2025-07-17 06:56:41,190 [DEBUG] Frame 4, cam_id 1: 23 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           3           2           0]
+2025-07-17 06:56:41,191 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:41,253 [DEBUG] Extracted 23 features
+2025-07-17 06:56:41,255 [DEBUG] Extracted 23 features
+2025-07-17 06:56:41,256 [DEBUG] Unique class IDs: [          0           2           3]
+2025-07-17 06:56:41,258 [DEBUG] Class 0 (ball): 1 detections, 1 features
+2025-07-17 06:56:41,265 [DEBUG] Tracker for class 0 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:41,267 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:56:41,809 [DEBUG] Tracker for class 2 returned 6 tracks, tids shape: torch.Size([6])
+2025-07-17 06:56:41,811 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:41,863 [DEBUG] Tracker for class 3 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:41,865 [DEBUG] Assigning global IDs for cam_id 0, 9 tracks
+2025-07-17 06:56:41,875 [DEBUG] Frame 10, cam_id 0: 9 global ID assignments
+2025-07-17 06:56:41,887 [INFO] Frame 10 for cam_id 0 written to video with 9 bounding boxes
+2025-07-17 06:56:41,887 [INFO] Completed frame 10 for cam_id 0
+2025-07-17 06:56:41,888 [DEBUG] GPU memory after frame 10 for cam_id 0: 1510.88 MB
+2025-07-17 06:56:41,962 [DEBUG] Frame 11, cam_id 0: 13 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           1           3]
+2025-07-17 06:56:41,963 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:42,052 [DEBUG] Extracted 13 features
+2025-07-17 06:56:42,054 [DEBUG] Extracted 13 features
+2025-07-17 06:56:42,055 [DEBUG] Unique class IDs: [          1           2           3]
+2025-07-17 06:56:42,057 [DEBUG] Class 1 (goalkeeper): 1 detections, 1 features
+2025-07-17 06:56:42,086 [DEBUG] Tracker for class 1 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:42,088 [DEBUG] Class 2 (player): 11 detections, 11 features
+2025-07-17 06:56:44,450 [DEBUG] Tracker for class 2 returned 15 tracks, tids shape: torch.Size([15])
+2025-07-17 06:56:44,453 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:44,472 [DEBUG] Tracker for class 3 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:44,475 [DEBUG] Assigning global IDs for cam_id 1, 17 tracks
+2025-07-17 06:56:44,498 [DEBUG] Frame 4, cam_id 1: 17 global ID assignments
+2025-07-17 06:56:44,519 [INFO] Frame 4 for cam_id 1 written to video with 17 bounding boxes
+2025-07-17 06:56:44,520 [INFO] Completed frame 4 for cam_id 1
+2025-07-17 06:56:44,522 [DEBUG] GPU memory after frame 4 for cam_id 1: 1510.90 MB
+2025-07-17 06:56:44,610 [DEBUG] Frame 5, cam_id 1: 21 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2]
+2025-07-17 06:56:44,612 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:44,654 [DEBUG] Extracted 21 features
+2025-07-17 06:56:44,656 [DEBUG] Extracted 21 features
+2025-07-17 06:56:44,657 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:56:44,659 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:56:44,710 [DEBUG] Tracker for class 2 returned 9 tracks, tids shape: torch.Size([9])
+2025-07-17 06:56:44,713 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:44,804 [DEBUG] Tracker for class 3 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:44,806 [DEBUG] Assigning global IDs for cam_id 0, 11 tracks
+2025-07-17 06:56:44,816 [DEBUG] Frame 11, cam_id 0: 11 global ID assignments
+2025-07-17 06:56:44,830 [INFO] Frame 11 for cam_id 0 written to video with 11 bounding boxes
+2025-07-17 06:56:44,830 [INFO] Completed frame 11 for cam_id 0
+2025-07-17 06:56:44,831 [DEBUG] GPU memory after frame 11 for cam_id 0: 1510.94 MB
+2025-07-17 06:56:44,914 [DEBUG] Frame 12, cam_id 0: 13 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           3           1]
+2025-07-17 06:56:44,914 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:44,960 [DEBUG] Extracted 13 features
+2025-07-17 06:56:44,962 [DEBUG] Extracted 13 features
+2025-07-17 06:56:44,963 [DEBUG] Unique class IDs: [          1           2           3]
+2025-07-17 06:56:44,965 [DEBUG] Class 1 (goalkeeper): 1 detections, 1 features
+2025-07-17 06:56:45,009 [DEBUG] Tracker for class 1 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:45,011 [DEBUG] Class 2 (player): 11 detections, 11 features
+2025-07-17 06:56:49,945 [DEBUG] Tracker for class 2 returned 6 tracks, tids shape: torch.Size([6])
+2025-07-17 06:56:49,947 [DEBUG] Class 3 (referee): 1 detections, 1 features
+2025-07-17 06:56:50,148 [DEBUG] Tracker for class 3 returned 1 tracks, tids shape: torch.Size([1])
+2025-07-17 06:56:50,150 [DEBUG] Assigning global IDs for cam_id 0, 8 tracks
+2025-07-17 06:56:50,157 [DEBUG] Frame 12, cam_id 0: 8 global ID assignments
+2025-07-17 06:56:50,168 [INFO] Frame 12 for cam_id 0 written to video with 8 bounding boxes
+2025-07-17 06:56:50,169 [INFO] Completed frame 12 for cam_id 0
+2025-07-17 06:56:50,171 [DEBUG] GPU memory after frame 12 for cam_id 0: 1511.00 MB
+2025-07-17 06:56:50,254 [DEBUG] Frame 13, cam_id 0: 14 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           3           3           2           2]
+2025-07-17 06:56:50,255 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:50,297 [DEBUG] Extracted 14 features
+2025-07-17 06:56:50,298 [DEBUG] Extracted 14 features
+2025-07-17 06:56:50,300 [DEBUG] Unique class IDs: [          2           3]
+2025-07-17 06:56:50,302 [DEBUG] Class 2 (player): 12 detections, 12 features
+2025-07-17 06:56:50,798 [DEBUG] Tracker for class 2 returned 15 tracks, tids shape: torch.Size([15])
+2025-07-17 06:56:50,800 [DEBUG] Assigning global IDs for cam_id 1, 15 tracks
+2025-07-17 06:56:50,810 [DEBUG] Frame 5, cam_id 1: 15 global ID assignments
+2025-07-17 06:56:50,822 [INFO] Frame 5 for cam_id 1 written to video with 15 bounding boxes
+2025-07-17 06:56:50,823 [INFO] Completed frame 5 for cam_id 1
+2025-07-17 06:56:50,824 [DEBUG] GPU memory after frame 5 for cam_id 1: 1511.07 MB
+2025-07-17 06:56:50,911 [DEBUG] Frame 6, cam_id 1: 21 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2]
+2025-07-17 06:56:50,911 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:56:50,952 [DEBUG] Extracted 21 features
+2025-07-17 06:56:50,953 [DEBUG] Extracted 21 features
+2025-07-17 06:56:50,954 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:56:50,956 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:57:01,679 [DEBUG] Tracker for class 2 returned 9 tracks, tids shape: torch.Size([9])
+2025-07-17 06:57:01,682 [DEBUG] Class 3 (referee): 2 detections, 2 features
+2025-07-17 06:57:02,194 [DEBUG] Tracker for class 3 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:57:02,196 [DEBUG] Assigning global IDs for cam_id 0, 11 tracks
+2025-07-17 06:57:02,204 [DEBUG] Frame 13, cam_id 0: 11 global ID assignments
+2025-07-17 06:57:02,215 [INFO] Frame 13 for cam_id 0 written to video with 11 bounding boxes
+2025-07-17 06:57:02,216 [INFO] Completed frame 13 for cam_id 0
+2025-07-17 06:57:02,217 [DEBUG] GPU memory after frame 13 for cam_id 0: 1511.20 MB
+2025-07-17 06:57:02,305 [DEBUG] Frame 14, cam_id 0: 15 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           3           3           2           3]
+2025-07-17 06:57:02,306 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:57:02,349 [DEBUG] Extracted 15 features
+2025-07-17 06:57:02,350 [DEBUG] Extracted 15 features
+2025-07-17 06:57:02,352 [DEBUG] Unique class IDs: [          2           3]
+2025-07-17 06:57:02,354 [DEBUG] Class 2 (player): 12 detections, 12 features
+2025-07-17 06:57:03,537 [DEBUG] Tracker for class 2 returned 0 tracks, tids shape: torch.Size([0])
+2025-07-17 06:57:03,539 [DEBUG] Assigning global IDs for cam_id 1, 0 tracks
+2025-07-17 06:57:03,540 [ERROR] Error in assign_global for frame 6, cam_id 1: 'list' object has no attribute 'numel'
+2025-07-17 06:57:03,546 [INFO] Frame 6 for cam_id 1 written to video with 0 bounding boxes
+2025-07-17 06:57:03,547 [INFO] Completed frame 6 for cam_id 1
+2025-07-17 06:57:03,548 [DEBUG] GPU memory after frame 6 for cam_id 1: 1511.15 MB
+2025-07-17 06:57:03,631 [DEBUG] Frame 7, cam_id 1: 21 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2]
+2025-07-17 06:57:03,631 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:57:03,677 [DEBUG] Extracted 21 features
+2025-07-17 06:57:03,679 [DEBUG] Extracted 21 features
+2025-07-17 06:57:03,680 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:57:03,682 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:57:03,742 [DEBUG] Tracker for class 2 returned 15 tracks, tids shape: torch.Size([15])
+2025-07-17 06:57:03,744 [DEBUG] Assigning global IDs for cam_id 1, 15 tracks
+2025-07-17 06:57:03,754 [DEBUG] Frame 7, cam_id 1: 15 global ID assignments
+2025-07-17 06:57:03,765 [INFO] Frame 7 for cam_id 1 written to video with 15 bounding boxes
+2025-07-17 06:57:03,766 [INFO] Completed frame 7 for cam_id 1
+2025-07-17 06:57:03,767 [DEBUG] GPU memory after frame 7 for cam_id 1: 1511.33 MB
+2025-07-17 06:57:03,839 [DEBUG] Frame 8, cam_id 1: 22 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           0]
+2025-07-17 06:57:03,840 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:57:03,887 [DEBUG] Extracted 22 features
+2025-07-17 06:57:03,888 [DEBUG] Extracted 22 features
+2025-07-17 06:57:03,889 [DEBUG] Unique class IDs: [          0           2]
+2025-07-17 06:57:03,891 [DEBUG] Class 0 (ball): 1 detections, 1 features
+2025-07-17 06:57:03,903 [DEBUG] Tracker for class 0 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:57:03,905 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:57:23,886 [DEBUG] Tracker for class 2 returned 6 tracks, tids shape: torch.Size([6])
+2025-07-17 06:57:23,889 [DEBUG] Class 3 (referee): 3 detections, 3 features
+2025-07-17 06:57:25,277 [DEBUG] Tracker for class 3 returned 3 tracks, tids shape: torch.Size([3])
+2025-07-17 06:57:25,279 [DEBUG] Assigning global IDs for cam_id 0, 9 tracks
+2025-07-17 06:57:25,287 [DEBUG] Frame 14, cam_id 0: 9 global ID assignments
+2025-07-17 06:57:25,296 [INFO] Frame 14 for cam_id 0 written to video with 9 bounding boxes
+2025-07-17 06:57:25,297 [INFO] Completed frame 14 for cam_id 0
+2025-07-17 06:57:25,298 [DEBUG] GPU memory after frame 14 for cam_id 0: 1511.39 MB
+2025-07-17 06:57:25,387 [DEBUG] Frame 15, cam_id 0: 14 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           3           1           3           2]
+2025-07-17 06:57:25,388 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:57:25,439 [DEBUG] Extracted 14 features
+2025-07-17 06:57:25,441 [DEBUG] Extracted 14 features
+2025-07-17 06:57:25,442 [DEBUG] Unique class IDs: [          1           2           3]
+2025-07-17 06:57:25,444 [DEBUG] Class 1 (goalkeeper): 1 detections, 1 features
+2025-07-17 06:57:25,506 [DEBUG] Tracker for class 1 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:57:25,508 [DEBUG] Class 2 (player): 11 detections, 11 features
+2025-07-17 06:57:27,781 [DEBUG] Tracker for class 2 returned 0 tracks, tids shape: torch.Size([0])
+2025-07-17 06:57:27,783 [DEBUG] Assigning global IDs for cam_id 1, 2 tracks
+2025-07-17 06:57:27,787 [DEBUG] Frame 8, cam_id 1: 2 global ID assignments
+2025-07-17 06:57:27,794 [INFO] Frame 8 for cam_id 1 written to video with 2 bounding boxes
+2025-07-17 06:57:27,795 [INFO] Completed frame 8 for cam_id 1
+2025-07-17 06:57:27,796 [DEBUG] GPU memory after frame 8 for cam_id 1: 1511.17 MB
+2025-07-17 06:57:27,882 [DEBUG] Frame 9, cam_id 1: 21 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2]
+2025-07-17 06:57:27,883 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:57:27,923 [DEBUG] Extracted 21 features
+2025-07-17 06:57:27,924 [DEBUG] Extracted 21 features
+2025-07-17 06:57:27,926 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:57:27,928 [DEBUG] Class 2 (player): 21 detections, 21 features
+2025-07-17 06:57:27,971 [DEBUG] Tracker for class 2 returned 15 tracks, tids shape: torch.Size([15])
+2025-07-17 06:57:27,972 [DEBUG] Assigning global IDs for cam_id 1, 15 tracks
+2025-07-17 06:57:27,989 [DEBUG] Frame 9, cam_id 1: 15 global ID assignments
+2025-07-17 06:57:28,000 [INFO] Frame 9 for cam_id 1 written to video with 15 bounding boxes
+2025-07-17 06:57:28,001 [INFO] Completed frame 9 for cam_id 1
+2025-07-17 06:57:28,001 [DEBUG] GPU memory after frame 9 for cam_id 1: 1511.55 MB
+2025-07-17 06:57:28,075 [DEBUG] Frame 10, cam_id 1: 20 detections, class IDs: [          2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2           2]
+2025-07-17 06:57:28,076 [DEBUG] Extracting features for 1 frames with 1 box lists
+2025-07-17 06:57:28,141 [DEBUG] Extracted 20 features
+2025-07-17 06:57:28,143 [DEBUG] Extracted 20 features
+2025-07-17 06:57:28,144 [DEBUG] Unique class IDs: [          2]
+2025-07-17 06:57:28,146 [DEBUG] Class 2 (player): 20 detections, 20 features
+2025-07-17 06:58:06,508 [DEBUG] Tracker for class 2 returned 9 tracks, tids shape: torch.Size([9])
+2025-07-17 06:58:06,510 [DEBUG] Class 3 (referee): 2 detections, 2 features
+2025-07-17 06:58:08,598 [DEBUG] Tracker for class 3 returned 2 tracks, tids shape: torch.Size([2])
+2025-07-17 06:58:08,600 [DEBUG] Assigning global IDs for cam_id 0, 13 tracks
+2025-07-17 06:58:08,609 [DEBUG] Frame 15, cam_id 0: 13 global ID assignments
+2025-07-17 06:58:08,624 [INFO] Frame 15 for cam_id 0 written to video with 13 bounding boxes
+2025-07-17 06:58:08,625 [INFO] Completed frame 15 for cam_id 0
+2025-07-17 06:58:08,626 [DEBUG] GPU memory after frame 15 for cam_id 0: 1511.68 MB
+2025-07-17 07:06:34,773 [ERROR] Timeout in batch processing for cam_id 1, frames 0 to 15
+2025-07-17 07:06:35,123 [ERROR] Timeout in batch processing for cam_id 0, frames 0 to 15
+2025-07-17 07:07:06,098 [DEBUG] Processing batch for cam_id 1, frames 16 to 19
