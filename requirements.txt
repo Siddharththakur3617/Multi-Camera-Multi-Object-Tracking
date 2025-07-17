@@ -1,0 +1,12 @@
+cython
+ultralytics
+opencv-python-headless
+numpy
+scipy
+torch
+torchvision
+lap
+torchreid
+filterpy
+cython_bbox
+timeout-decorator
