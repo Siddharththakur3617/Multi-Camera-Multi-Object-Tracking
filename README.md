@@ -147,12 +147,6 @@ reid:
   model: "osnet_x1_0"
   distance_metric: "cosine"
 ```
-### Datasets
-Sample datasets are provided in the data/ directory for testing purposes.
-
-The system supports standard multi-camera datasets like DukeMTMC and MOTChallenge, as well as custom datasets.
-
-To use custom datasets, place video files in the data/ directory and update the configuration file accordingly.
 
 ### Performance Optimization
 GPU Acceleration: Install PyTorch with CUDA support for enhanced processing speed.
