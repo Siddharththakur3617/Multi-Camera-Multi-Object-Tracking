@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 - Place them in the assets/ directory.
 
-#### 5. Congigure Tracking
+#### 5. Configure Tracking
 Set paths for your camera videos and weights:
 
 ```bash
@@ -124,18 +124,15 @@ Multi-Camera-Multi-Object-Tracking:.
 ### Configuration
 The system is highly configurable through YAML files located in the config/ directory. Key parameters include:
 
-Camera Settings: Define intrinsic and extrinsic parameters for each camera.
-
 Detection Model: Specify model type (e.g., YOLOv5, Faster R-CNN) and confidence threshold.
 
 Tracking Parameters: Set IoU threshold, maximum track age, etc.
 
 ReID Settings: Configure re-identification model and distance metric.
 
-Example Configuration (config/default.yaml)
+#### Example Configuration (config/default.yaml)
 yaml
-Copy
-Edit
+```
 cameras:
   - id: 0
     source: "rtsp://example.com/stream1"
@@ -149,7 +146,7 @@ tracker:
 reid:
   model: "osnet_x1_0"
   distance_metric: "cosine"
-
+```
 ### Datasets
 Sample datasets are provided in the data/ directory for testing purposes.
 
