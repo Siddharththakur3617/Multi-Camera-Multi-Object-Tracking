@@ -29,7 +29,6 @@ This repository hosts a robust Multi-Camera Multi-Object Tracking (MCMOT) system
 #### 1. Clone the Repository:
 
 ```bash
-```bash
 git clone https://github.com/your-username/Multi-Camera-Multi-Object-Tracking.git
 cd Multi-Camera-Multi-Object-Tracking
 ```
